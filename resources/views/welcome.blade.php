@@ -47,13 +47,7 @@
                                     Panel administrativo CMS </br>
                                     Tiempo estimado: 8 - 10 días</br>
                                     </br>
-                                    Hosting 600.000/anual <small><strong>1er año gratis</strong></small></br>
-                                    1 Wordpress Optimizado</br>
-                                    50 GB de Almacenamiento</br>
-                                    3 GB de RAM</br>
-                                    2 núcleos de CPU</br>
-                                    SSL ilimitados</br>
-                                    20 cuentas de correo electrónico</br>
+
 
 
                                 </p>
