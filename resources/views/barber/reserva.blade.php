@@ -45,7 +45,7 @@
 
                         </div>
                         <div class="col-lg-6 col-12">
-                            <input type="date" name="bb-date" id="bb-date" class="form-control" placeholder="Date" required>
+                            <input type="date" name="bb-date" id="bb-date" class="form-control" placeholder="dd/mm/aaaa" required>
                         </div>
 
                     </div>
