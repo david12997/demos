@@ -4,7 +4,7 @@
 .aipus{
     width: 100%;
     height: 40px;
-    background: linear-gradient(to right, white, #4301E9);
+    background: white;
     position: fixed;
     top: 0;
     z-index: 9999;
