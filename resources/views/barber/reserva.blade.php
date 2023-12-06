@@ -1,5 +1,5 @@
 <section class="booking-section section-padding" id="booking-section">
-    <div class="container">
+    <div id="reservacion" class="container">
     <div class="row">
 
         <div class="col-lg-10 col-12 mx-auto">
@@ -7,7 +7,7 @@
                 <div class="text-center mb-5">
                     <h2 class="mb-2">Reservar Turno</h2>
 
-                    <p>Reserva tu turno para y obten descuentos</p>
+                    <p>Reserva tu turno  y obten descuentos</p>
                     <p>Recibe la confirmación a tu whatsapp</p>
                 </div>
 
@@ -53,7 +53,7 @@
                     <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Adicionales Ej: Necesito parqueadero para mi vehiculo"></textarea>
 
                     <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                        <button type="submit" class="form-control">Reservar</button>
+                        <button type="submit" class="form-control">Reservar Turno</button>
                     </div>
                 </div>
             </form>

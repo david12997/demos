@@ -23,6 +23,10 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link click-scroll" href="#reservacion">Reservar</a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link click-scroll" href="#section_4">Precios</a>
             </li>
 
