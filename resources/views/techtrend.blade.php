@@ -20,11 +20,13 @@
     <!-- script
     ================================================== -->
     <script src="{{asset("techtrend/js/modernizr.js")}}"></script>
+    <script src="{{asset("techtrend/js/jquery-1.11.0.min.js")}}"></script>
 
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     @include('aipus')
 
+    @include('techtrend.viewproduct')
     @include('techtrend.icons')
     @include('techtrend.header')
     @include('techtrend.inicio')

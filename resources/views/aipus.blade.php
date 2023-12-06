@@ -59,24 +59,3 @@
     </div>
 </div>
 
-<script async>
-    let lastScrollTop = 0;
-    const aipus = document.querySelector('.aipus');
-
-    window.addEventListener('scroll', function() {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll > lastScrollTop) {
-            // Scroll hacia abajo
-            aipus.style.top = '-50px'; // Asegúrate de que este valor sea igual o mayor a la altura del navbar
-            document.getElementById("header").style.top = '-40px';
-        } else {
-            // Scroll hacia arriba
-            aipus.style.top = '0';
-            document.getElementById("header").style.top = '0px';
-        }
-
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para navegadores móviles
-    }, false);
-
-</script>

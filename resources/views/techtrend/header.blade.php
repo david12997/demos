@@ -1,4 +1,22 @@
+<style>
+    .container-c-e{
+        width:120%
+        @media(min-width: 800px){
+            width:70%
+        }
+    }
+    .cart-empty{
+        top: -200px;
+        position:relative;
+        @media(min-width: 800px){
+            top: -50px;
+        }
+    }
 
+    .container-close-cart{
+        z-index:99999;
+    }
+</style>
 
 
 <div class="screen-cart">
@@ -9,6 +27,12 @@
                 </span>
 
         </div>
+
+        <div style=";display:flex;justify-content:center;algin-items:center;position:relative;" class="container-c-e">
+            <img  width="100%" src="{{asset("techtrend/images/cart-empty.png")}}" class="cart-empty">
+        </div>
+
+
     </div>
 </div>
 
@@ -16,7 +40,7 @@
       <nav id="header-nav" class="navbar navbar-expand-lg">
 
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="#inicio">
             <img src="{{asset("techtrend/images/techtrend.png")}}" class="logo">
           </a>
 
@@ -29,7 +53,7 @@
 
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="#inicio">
                 <img src="{{asset("techtrend/images/techtrend-mobile.png")}}" class="logo">
               </a>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
@@ -45,7 +69,7 @@
                 </li>
 
                 <li class="nav-item "  data-bs-toggle="offcanvas"  data-bs-target="#bdNavbar">
-                  <a class="nav-link me-4 fw-bold" href="#yearly-sale">Promos</a>
+                  <a class="nav-link me-4 fw-bold" href="#promos">Promos</a>
                 </li>
                 <li class="nav-item "  data-bs-toggle="offcanvas"  data-bs-target="#bdNavbar">
                   <a class="nav-link me-4 fw-bold" href="#latest-blog">Nosotros</a>
@@ -78,3 +102,46 @@
 
       </nav>
     </header>
+<script defer>
+
+    $(document).ready(function () {
+        $('.cart-desktop').click(function () {
+            $('.screen-cart').css('display','flex')
+        })
+        $('.close').click(function () {
+            $('.screen-cart').css('display','none')
+        })
+        $('.cart-mobile').click(function () {
+            $('.screen-cart').css('display','flex')
+        })
+
+        $('.container-close-cart').click(function () {
+            $('.screen-cart').css('display','none')
+        })
+    })
+</script>
+
+
+<script defer>
+    let lastScrollTop = 0;
+    const aipus = document.querySelector('.aipus');
+
+    window.addEventListener('scroll', function() {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // Scroll hacia abajo
+            aipus.style.top = '-50px'; // Asegúrate de que este valor sea igual o mayor a la altura del navbar
+            document.getElementById("header").style.top = '-40px';
+            document.querySelector('.offcanvas').style.top = '0px';
+        } else {
+            // Scroll hacia arriba
+            aipus.style.top = '0';
+            document.getElementById("header").style.top = '0px';
+            document.querySelector('.offcanvas').style.top = '40px';
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para navegadores móviles
+    }, false);
+
+</script>

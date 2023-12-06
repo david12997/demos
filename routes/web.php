@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/landing/techtrend', function () {
+Route::get('/ecommerce/techtrend', function () {
     return view('techtrend');
+});
+
+Route::get('/service/barbershop', function () {
+    return view('barber');
 });

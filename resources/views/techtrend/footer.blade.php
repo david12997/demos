@@ -108,7 +108,8 @@
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="copyright">
-              <p>© Copyright 2023 TechTrend. Design by <a href="https:/www.aipus.co/">aipus.co</a> Distribution by <a href="https://www.aipus.co/">aipus.co</a>
+              <p>© Copyright 2023 TechTren</br>
+                Design by <a href="https:/www.aipus.co/">aipus.co</a>
               </p>
             </div>
           </div>
