@@ -14,8 +14,8 @@
     transition: top 0.3s;
 
     .container-options{
-        width: 70%;
-        margi-left:30%;
+        width: 80%;
+        margi-left:20%;
         display:flex;
         justify-content: flex-end;
         @media(min-width: 800px){
@@ -55,7 +55,7 @@
     </a>
     <div class="container-options">
 
-        <button>Crear proyecto similar<img style="margin-left:5px" width="24px" src="https://cms.aipus.co/aipus/assets/sinmx3wpgb4ccg8s" alt="" /></button>
+        <button>Crear proyecto similar +</button>
     </div>
 </div>
 

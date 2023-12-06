@@ -32,3 +32,47 @@
         </ul>
     </div>
 </nav>
+<script defer>
+
+    $('.navbar-toggler').click(function () {
+        console.log('click');
+        $('.sidebar').toggleClass('collapse');
+        $('.sidebar').toggleClass('collapsed');
+    });
+
+    $('.nav-link').click(function () {
+        $('.sidebar').toggleClass('collapse');
+        $('.sidebar').toggleClass('collapsed');
+    });
+
+    $('.click-scroll').click(function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 70
+        }, 500);
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scroll-top').fadeIn();
+        } else {
+            $('.scroll-top').fadeOut();
+        }
+    });
+
+    $('.scroll-top').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.navbar').addClass('bg-white');
+        } else {
+            $('.navbar').removeClass('bg-white');
+        }
+    });
+
+
+</script>

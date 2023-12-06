@@ -21,6 +21,7 @@
         <link href="{{asset("barber/css/bootstrap-icons.css")}}" rel="stylesheet">
 
         <link href="{{asset("barber/css/templatemo-barber-shop.css")}}" rel="stylesheet">
+        <script src="{{asset("barber/js/jquery.min.js")}}"></script>
 <!--
 
 TemplateMo 585 Barber Shop
@@ -55,7 +56,7 @@ https://templatemo.com/tm-585-barber-shop
             </div>
 
         <!-- JAVASCRIPT FILES -->
-        <script src="{{asset("barber/js/jquery.min.js")}}"></script>
+
         <script src=""{{asset("barber/js/bootstrap.min.js")}}"></script>
         <script src=""{{asset("barber/js/click-scroll.js")}}"></script>
         <script src=""{{asset("barber/js/custom.js")}}"></script>
