@@ -55,7 +55,7 @@
     </a>
     <div class="container-options">
 
-        <button>Crear proyecto similar +</button>
+        <button>Crear proyecto similar <span style="font-size:20px;margin-left:2px;padding-left:2px">+<span></button>
     </div>
 </div>
 
